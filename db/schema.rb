@@ -10,17 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200511200901) do
-
-  create_table "passenger_taxi", force: :cascade do |t|
-    t.integer "passenger_id"
-    t.integer "taxi_id"
-  end
-
-  create_table "passenger_taxis", force: :cascade do |t|
-    t.integer "passenger_id"
-    t.integer "taxi_id"
-  end
+ActiveRecord::Schema.define(version: 20200511195112) do
 
   create_table "passengers", force: :cascade do |t|
     t.datetime "created_at", null: false
